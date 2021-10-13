@@ -1,0 +1,787 @@
+{
+    "configName": "Legal_UserAgreements-MPPContent-UA-Rewrite",
+    "repoUrl": "https://github.paypal.com/pambush/MPPContent",
+    "gitUser": "l10ntr",
+    "gitPassword": "AAEhn48Pn7Oh+WJqGTVUlfymcJGXzxUgIkjD3H/5tH6SshOCLsTvfmwsTXQFsbmi79LWYo+RUjdDVJRg09x+r6yBpO3APQ==",
+    "forkOrganization": "SmartlingPROD",
+    "apiHost": "https://github.paypal.com",
+    "sourceBranch": "UA-Rewrite",
+    "targetBranch": "UA-Rewrite",
+    "filePathFilters": [        
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/shared\/ua\/eu\/en\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "cs-CZ",
+                    "application": "cs"
+                },
+                {
+                    "smartling": "da-DK",
+                    "application": "da"
+                },
+                {
+                    "smartling": "de-DE",
+                    "application": "de"
+                },
+                {
+                    "smartling": "el-GR",
+                    "application": "el"
+                },
+                {
+                    "smartling": "es-ES",
+                    "application": "es"
+                },
+                {
+                    "smartling": "fi-FI",
+                    "application": "fi"
+                },
+                {
+                    "smartling": "fr-FR",
+                    "application": "fr"
+                },
+                {
+                    "smartling": "hu-HU",
+                    "application": "hu"
+                },
+                {
+                    "smartling": "it-IT",
+                    "application": "it"
+                },
+                {
+                    "smartling": "nl-NL",
+                    "application": "nl"
+                },
+                {
+                    "smartling": "no-NO",
+                    "application": "no"
+                },
+                {
+                    "smartling": "pl-PL",
+                    "application": "pl"
+                },
+                {
+                    "smartling": "pt-PT",
+                    "application": "pt"
+                },
+                {
+                    "smartling": "sk-SK",
+                    "application": "sk"
+                },
+                {
+                    "smartling": "sv-SE",
+                    "application": "sv"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/shared\/ua\/row\/en\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "ar-EG",
+                    "application": "ar"
+                },
+                {
+                    "smartling": "es-MX",
+                    "application": "es"
+                },
+                {
+                    "smartling": "he-IL",
+                    "application": "he"
+                },
+                {
+                    "smartling": "ko-KR",
+                    "application": "ko"
+                },
+                {
+                    "smartling": "th-TH",
+                    "application": "th"
+                },
+                {
+                    "smartling": "zh-CN",
+                    "application": "zh_C2\/zh"
+                },
+                {
+                    "smartling": "zh-TW",
+                    "application": "zh_TW\/zh"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/shared\/ua\/ukroe\/en\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "cs-CZ",
+                    "application": "cs"
+                },
+                {
+                    "smartling": "fi-FI",
+                    "application": "fi"
+                },
+                {
+                    "smartling": "el-GR",
+                    "application": "el"
+                },
+                {
+                    "smartling": "hu-HU",
+                    "application": "hu"
+                },
+                {
+                    "smartling": "sk-SK",
+                    "application": "sk"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/shared\/ua\/french\/en\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "fr-FR",
+                    "application": "fr"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/AR\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "es-MX",
+                    "application": "es"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/AT\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "de-DE",
+                    "application": "de"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/BE\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "fr-FR",
+                    "application": "fr"
+                },
+                {
+                    "smartling": "nl-NL",
+                    "application": "nl"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/BR\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "pt-BR",
+                    "application": "pt"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/C2\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "zh-CN",
+                    "application": "zh"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/CA\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "fr-CA",
+                    "application": "fr"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/CH\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "de-DE",
+                    "application": "de"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/CN\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "zh-CN",
+                    "application": "zh"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/CZ\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "cs-CZ",
+                    "application": "cs"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/DE\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "de-DE",
+                    "application": "de"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/DK\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "da-DK",
+                    "application": "da"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/ES\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "es-ES",
+                    "application": "es"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/FI\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "fi-FI",
+                    "application": "fi"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/FR\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "fr-FR",
+                    "application": "fr"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },        
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/GR\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "el-GR",
+                    "application": "el"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/HK\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "zh-HK",
+                    "application": "zh"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/HU\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "hu-HU",
+                    "application": "hu"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/IL\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "he-IL",
+                    "application": "he"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/IT\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "it-IT",
+                    "application": "it"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/JP\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "ja-JP",
+                    "application": "ja"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/KR\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "ko-KR",
+                    "application": "ko"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/MX\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "es-MX",
+                    "application": "es"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/NL\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "nl-NL",
+                    "application": "nl"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/NO\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "no-NO",
+                    "application": "no"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/PL\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "pl-PL",
+                    "application": "pl"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/PT\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "pt-PT",
+                    "application": "pt"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/RU\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "ru-RU",
+                    "application": "ru"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/SE\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "sv-SE",
+                    "application": "sv"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/SK\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "sk-SK",
+                    "application": "sk"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/TH\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "th-TH",
+                    "application": "th"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot\/TW\/en\/ua\/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "zh-TW",
+                    "application": "zh"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        }
+    ],
+    "authorizeJobs": false,
+    "autoMergePullRequests": false,
+    "conflictResolutionStrategy": "THEIRS",
+    "languageLevelPullRequest": false,
+    "smartlingProject": {
+        "projectId": "5b09f843b",
+        "userIdentifier": "lochhnfotziofghbmdfobbzmsmxkxs",
+        "tokenSecret": "AAHMwNY4iIMxhssdePcHIUmNqeFpYBJPjYNrVITKm+bj9gwMoR469orNz0fxrkYsMz0rqIsMABUxcvsSSOl3gHlgZg2cqwIL0/H3SlJbnSukLd34zA=="
+    },
+    "enabled": true
+}
