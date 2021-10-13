@@ -2,7 +2,7 @@ import express from 'express'
 import https from 'https'
 
 const options = {
-    hostname: 'vip-smartlingconnectorservprod.us-central1.gcp.dev.paypalinc.com',
+    hostname: 'hostname',
     port: 443,
     path: '/gitconnector/v1/repoconfig',
     method: 'GET',
@@ -12,7 +12,7 @@ const options = {
 }
 
 app.use(function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', 'vip-smartlingconnectorservprod.us-central1.gcp.dev.paypalinc.com'); // update to match the domain you will make the request from
+  res.header('Access-Control-Allow-Origin', 'hostname'); // update to match the domain you will make the request from
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });

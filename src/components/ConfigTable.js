@@ -2,10 +2,10 @@ import React, { Component, ReactDOM } from 'react'
 import DataTable from 'react-data-table-component'
 import FilePathFiltersTable from './FilePathFiltersTable.js'
 import https from 'https'
+//import data from '../data/test_config.json'
 
-let data = ''
 const options = {
-    hostname: 'vip-smartlingconnectorservprod.us-central1.gcp.dev.paypalinc.com',
+    hostname: 'localhost:3000',
     port: 443,
     path: '/gitconnector/v1/repoconfig',
     method: 'GET',
@@ -13,7 +13,8 @@ const options = {
         'Access-Control-Allow-Origin': '*'
     }
 }
-/*const data = [
+
+const data = [
   {
     "repoConfigUid": "abcdefghij",
     "created": "2019-08-08T22:37:06.086Z",
@@ -304,7 +305,7 @@ const options = {
     },
     "enabled": true
 }
-]*/
+]
 
 const columns = [
   {
@@ -414,7 +415,7 @@ class ConfigTable extends Component {
 };
 
 // Call API to get all the active gitconnector configs
-const getConfigs = () => {
+/*const getConfigs = () => {
     let out, configs = ''
     const req = https.request(options, res => {
         console.log(`Called gitconnector API, statusCode: ${res.statusCode}`)
@@ -436,6 +437,6 @@ const getConfigs = () => {
     return configs
 }
 
-data = getConfigs()
+data = getConfigs()*/
 
 export default ConfigTable
