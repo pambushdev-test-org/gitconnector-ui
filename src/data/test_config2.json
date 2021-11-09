@@ -1,0 +1,143 @@
+{
+    "repoConfigUid": "klmnopqurst",
+    "created": "2019-08-09T22:37:06.086Z",
+    "modified": "2019-08-11T22:08:08.055Z",
+    "configName": "Test Config 2",
+    "repoUrl": "https://github.com/another repo",
+    "gitUser": "gitUserB",
+    "gitPassword": "gitPasswordGoesHere",
+    "forkOrganization": "QA",
+    "apiHost": "https://github.com",
+    "sourceBranch": "master",
+    "targetBranch": "master",
+    "filePathFilters": [        
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot/shared/ua/eu/en/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "cs-CZ",
+                    "application": "cs"
+                },
+                {
+                    "smartling": "da-DK",
+                    "application": "da"
+                },
+                {
+                    "smartling": "de-DE",
+                    "application": "de"
+                },
+                {
+                    "smartling": "el-GR",
+                    "application": "el"
+                },
+                {
+                    "smartling": "es-ES",
+                    "application": "es"
+                },
+                {
+                    "smartling": "fi-FI",
+                    "application": "fi"
+                },
+                {
+                    "smartling": "fr-FR",
+                    "application": "fr"
+                },
+                {
+                    "smartling": "hu-HU",
+                    "application": "hu"
+                },
+                {
+                    "smartling": "it-IT",
+                    "application": "it"
+                },
+                {
+                    "smartling": "nl-NL",
+                    "application": "nl"
+                },
+                {
+                    "smartling": "no-NO",
+                    "application": "no"
+                },
+                {
+                    "smartling": "pl-PL",
+                    "application": "pl"
+                },
+                {
+                    "smartling": "pt-PT",
+                    "application": "pt"
+                },
+                {
+                    "smartling": "sk-SK",
+                    "application": "sk"
+                },
+                {
+                    "smartling": "sv-SE",
+                    "application": "sv"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        },
+        {
+            "fileType": "javaProperties",
+            "includes": [
+                "ContentRoot/shared/ua/row/en/.*\\.properties"
+            ],
+            "excludes": [],
+            "translationPath": "${originalFile.path.replaceAll('/en/', '/' + locale + '/')}${originalFile.name}",
+            "localesMapping": [
+                {
+                    "smartling": "ar-EG",
+                    "application": "ar"
+                },
+                {
+                    "smartling": "es-MX",
+                    "application": "es"
+                },
+                {
+                    "smartling": "he-IL",
+                    "application": "he"
+                },
+                {
+                    "smartling": "ko-KR",
+                    "application": "ko"
+                },
+                {
+                    "smartling": "th-TH",
+                    "application": "th"
+                },
+                {
+                    "smartling": "zh-CN",
+                    "application": "zh_C2/zh"
+                },
+                {
+                    "smartling": "zh-TW",
+                    "application": "zh_TW/zh"
+                }
+            ],
+            "directives": [
+                "smartling.placeholder_format = NONE",
+                "smartling.string_format = NONE",
+                "smartling.string_format_paths = html: *"
+            ]
+        }        
+    ],
+    "authorizeJobs": true,
+    "autoMergePullRequests": false,
+    "conflictResolutionStrategy": "OURS",
+    "languageLevelPullRequest": true,
+    "smartlingProject": {
+        "projectId": "abcdefgh",
+        "userIdentifier": "userIDhere",
+        "tokenSecret": "tokenSecretHere"
+    },
+    "enabled": true
+}
