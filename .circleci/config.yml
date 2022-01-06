@@ -100,7 +100,7 @@ jobs:
             terraform init
             gcloud container clusters get-credentials $CLUSTER_NAME --zone="us-west1-a"            
             terraform destroy -var $DOCKER_IMAGE --auto-approve
-            cd ../.terraform/cluster
+            cd ../cluster
             terraform init
             terraform destroy -var credentials_file=$HOME/.gcloud_keys.json --auto-approve
 
