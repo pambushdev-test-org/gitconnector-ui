@@ -1,0 +1,1 @@
+docker-image = "pambushdev/gitconnector-ui:0.0.2"
