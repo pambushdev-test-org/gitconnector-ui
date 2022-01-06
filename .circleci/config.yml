@@ -12,7 +12,7 @@ jobs:
         - run:
             name: Run Unit Tests
             command: |
-              ./node_modules/mocha/bin/mocha test/ --reporter mochawesome --reporter-options reportDir=test-results,reportFilename=test-results
+              ./node_modules/mocha/bin/mocha test/ --reporter tap
         - store_test_results:
             path: test-results
 
@@ -22,6 +22,7 @@ jobs:
       steps:
         - checkout
         - setup_remote_docker:
+            # Need to specify updated docker version here to prevent copy permission issue when run-script build is executed
             version: 19.03.13
             docker_layer_caching: false
         - run:
@@ -31,7 +32,7 @@ jobs:
               export IMAGE_NAME=$CIRCLECI_PROJECT_REPONAME
               docker build -t $DOCKER_LOGIN/$IMAGE_NAME:$TAG .
               echo $DOCKER_PWD | docker login -u $DOCKER_LOGIN --password-stdin
-              echo "Docker loggin successful, end docker image test."
+              docker push $DOCKER_LOGIN/$IMAGE_NAME
 
   gke_create_cluster:
       docker:
@@ -49,7 +50,7 @@ jobs:
               cd .terraform/cluster
               terraform init
               terraform plan -var credentials_file=$HOME/.gcloud_keys.json -out=plan.txt
-              echo "gke cluster test successful."
+              terraform apply plan.txt
 
   gke_deploy_app:
     docker:
@@ -71,8 +72,8 @@ jobs:
             cd .terraform/kubernetes-app
             terraform init
             terraform plan -var $DOCKER_IMAGE -out=plan.txt
-            echo "gke deploy app test successful"
-            
+            terraform apply plan.txt
+            export ENDPOINT="$(terraform output endpoint)"
             mkdir -p /tmp/gke/ && echo 'export ENDPOINT='${ENDPOINT} > /tmp/gke/gke-endpoint
       - persist_to_workspace:
           root: /tmp/gke
@@ -98,10 +99,10 @@ jobs:
             cd .terraform/kubernetes-app
             terraform init
             gcloud container clusters get-credentials $CLUSTER_NAME --zone="us-west1-a"            
-            
+            terraform destroy -var $DOCKER_IMAGE --auto-approve
             cd ../.terraform/cluster
-            echo "destroy gke cluster test successful"
-            
+            terraform init
+            terraform destroy -var credentials_file=$HOME/.gcloud_keys.json --auto-approve
 
 workflows:
   build_test:
