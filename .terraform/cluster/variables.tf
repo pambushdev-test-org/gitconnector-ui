@@ -4,7 +4,7 @@ variable "project" {
 
 variable "machine_type" {
   description = "Machine type for GCP cluster"
-  default     = "g1-small"
+  default     = "f1-micro"
 }
 
 variable "credentials_file" {
