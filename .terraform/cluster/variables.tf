@@ -2,6 +2,11 @@ variable "project" {
   description = "GCP Project Name"
 }
 
+variable "machine_type" {
+  description = "Machine type for GCP cluster"
+  default     = "g1-small"
+}
+
 variable "credentials_file" {
   description = "GCP creds"
   default     = ""

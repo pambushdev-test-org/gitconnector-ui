@@ -27,18 +27,6 @@ resource "kubernetes_deployment" "app" {
             name           = "port-5000"
             container_port = 5000
           }
-
-          resources {
-            limits = {
-              cpu = "0.5"
-              mem = "128Mi"
-            }
-
-            requests = {
-              cpu = "0.5"
-              mem = "128Mi"
-            }
-          }
         }
       }
     }
