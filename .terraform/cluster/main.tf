@@ -11,7 +11,7 @@ terraform {
 resource "google_container_cluster" "primary" {
   name               = var.cluster
   location           = var.zone
-  initial_node_count = 3
+  initial_node_count = 1
 
   master_auth {
     #username = ""

@@ -6,7 +6,7 @@ resource "kubernetes_deployment" "app" {
     }
   }
   spec {
-    replicas = 3
+    replicas = 1
 
     selector {
       match_labels = {
@@ -26,6 +26,11 @@ resource "kubernetes_deployment" "app" {
           port {
             name           = "port-5000"
             container_port = 5000
+          }
+
+          resources {
+            cpu = "0.5"
+            mem = "128Mi"
           }
         }
       }
