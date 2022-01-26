@@ -9,7 +9,7 @@ variable "machine_type" {
 
 variable "credentials_file" {
   description = "GCP creds"
-  default     = ""
+  default     = "~/.gcloud_keys/gcp-test-project-328901-2dbaecb7ed34.json"
 }
 
 variable "region" {
@@ -22,6 +22,10 @@ variable "zone" {
 
 variable "cluster" {
   default = "cicd-gitconnector-ui"
+}
+
+variable "node_pool_name" {
+  default = "pool-gitconnector-ui"
 }
 
 variable "app_name" {
