@@ -9,15 +9,25 @@ terraform {
 }
 
 resource "google_container_cluster" "primary" {
-  name               = var.cluster
-  location           = var.zone
-  initial_node_count = 1
+  # Remove default node pool and manage custom node pool separately per best practice
+  name                     = var.cluster
+  location                 = var.zone
+  initial_node_count       = 1
+  remove_default_node_pool = true
 
+  # Service account will be used to access kubernetes cluster
   master_auth {
     client_certificate_config {
       issue_client_certificate = false
     }
   }
+}
+
+resource "google_container_node_pool" "primary_preemptible_nodes" {
+  name       = var.node_pool_name
+  location   = google_container_cluster.primary.location
+  cluster    = google_container_cluster.primary.name
+  node_count = 1
 
   node_config {
     preemptible  = true
