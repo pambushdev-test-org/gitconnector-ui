@@ -36,9 +36,10 @@ jobs:
 
   gke_create_cluster:
       docker:
+        # Include custom docker image with alpine OS, gcloud, and terraform pre-installed
         - image: pambushdev/alpine-gcloud-terraform:latest
       environment:
-        CLOUDSDK_CORE_PROJECT: gcp-test-project-328901
+        CLOUDSDK_CORE_PROJECT: $GCP_TEST_PROJECT
       steps:
         - checkout
         - run:
@@ -56,7 +57,7 @@ jobs:
     docker:
       - image: pambushdev/alpine-gcloud-terraform:latest
     environment:
-      CLOUDSDK_CORE_PROJECT: gcp-test-project-328901
+      CLOUDSDK_CORE_PROJECT: $GCP_TEST_PROJECT
     steps:
       - checkout
       - run:
@@ -84,7 +85,7 @@ jobs:
     docker:
       - image: pambushdev/alpine-gcloud-terraform:latest
     environment:
-      CLOUDSDK_CORE_PROJECT: gcp-test-project-328901
+      CLOUDSDK_CORE_PROJECT: $GCP_TEST_PROJECT
     steps:
       - checkout
       - run:
