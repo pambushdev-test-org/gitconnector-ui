@@ -38,13 +38,12 @@ jobs:
       docker:
         # Include custom docker image with alpine OS, gcloud, and terraform pre-installed
         - image: pambushdev/alpine-gcloud-terraform:latest
-      environment:
-        CLOUDSDK_CORE_PROJECT: run export CLOUDSDK_CORE_PROJECT=$GCP_TEST_PROJECT
       steps:
         - checkout
         - run:
             name: Create GKE Cluster
             command: |
+              export CLOUDSDK_CORE_PROJECT=$GCP_TEST_PROJECT
               echo $TF_CLOUD_TOKEN | base64 -d > $HOME/.terraformrc
               echo $GOOGLE_CLOUD_KEYS | base64 -d > $HOME/.gcloud_keys.json
               gcloud auth activate-service-account --key-file ${HOME}/.gcloud_keys.json
@@ -56,13 +55,12 @@ jobs:
   gke_deploy_app:
     docker:
       - image: pambushdev/alpine-gcloud-terraform:latest
-    environment:
-      CLOUDSDK_CORE_PROJECT: run export CLOUDSDK_CORE_PROJECT=$GCP_TEST_PROJECT
     steps:
       - checkout
       - run:
           name: Deploy App to GKE
           command: |
+            export CLOUDSDK_CORE_PROJECT=$GCP_TEST_PROJECT
             export CLUSTER_NAME="cicd-gitconnector-ui"
             export TAG=0.0.3.<< pipeline.number >>
             export DOCKER_IMAGE="docker-image=${DOCKER_LOGIN}/${CIRCLECI_PROJECT_REPONAME}:$TAG"
@@ -84,13 +82,12 @@ jobs:
   gke_destroy_cluster:
     docker:
       - image: pambushdev/alpine-gcloud-terraform:latest
-    environment:
-      CLOUDSDK_CORE_PROJECT: run export CLOUDSDK_CORE_PROJECT=$GCP_TEST_PROJECT
     steps:
       - checkout
       - run:
           name: Destroy GKE Cluster
           command: |
+            export CLOUDSDK_CORE_PROJECT=$GCP_TEST_PROJECT
             export CLUSTER_NAME="cicd-gitconnector-ui"
             export TAG=0.0.3.<< pipeline.number >>
             export DOCKER_IMAGE="docker-image=${DOCKER_LOGIN}/${CIRCLECI_PROJECT_REPONAME}:$TAG"
