@@ -9,7 +9,7 @@ variable "machine_type" {
 
 variable "credentials_file" {
   description = "GCP creds"
-  default     = "~/.gcloud_keys/gcp-test-project-328901-2dbaecb7ed34.json"
+  default     = "~/.gcloud_keys/*.json"
 }
 
 variable "region" {
